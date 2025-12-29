@@ -29,6 +29,6 @@ jobs:
       
       - name: run pipeline
         env:
-          CAPSTONE_TEST: ${{ secrets.classification_sentiment_mlops_git_secret }}
+          CAPSTONE_TEST: ${{ secrets.CLASSIFICATION_SENTIMENT_MLOPS_GIT_SECRET }}
         run: |
           dvc repro
