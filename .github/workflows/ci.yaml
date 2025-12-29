@@ -13,7 +13,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Cache pip dependencies
         uses: actions/cache@v3
@@ -26,3 +26,9 @@ jobs:
       - name: install dependencies
         run: |
           pip install -r requirements.txt
+      
+      - name: run pipeline
+        env:
+          CAPSTONE_TEST: ${{ secrets.classification_sentiment_mlops_git_secret }}
+        run: |
+          dvc repro
