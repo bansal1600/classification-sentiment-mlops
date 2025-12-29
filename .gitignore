@@ -210,3 +210,6 @@ cred.txt
 notebooks/
 atlas/
 local_s3/
+
+data/
+models/
