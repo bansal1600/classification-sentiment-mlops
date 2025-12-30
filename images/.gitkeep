@@ -1,0 +1,9 @@
+# Images Directory
+
+Place your screenshots and architecture diagrams here:
+- flask-app.png 
+- mlflow-dashboard.png
+- k8s-dashboard.png
+- grafana-dashboard.png
+- cicd-pipeline.png
+
